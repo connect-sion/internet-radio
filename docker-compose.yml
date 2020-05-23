@@ -4,6 +4,8 @@ services:
     build: .
     depends_on:
       - icecast
+    environment:
+      - REACT_APP_STREAM=icecast:8000
     ports:
       - 4000:80
 
